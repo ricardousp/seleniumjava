@@ -8,9 +8,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-
-
 import java.util.regex.Pattern;
 
 
@@ -32,6 +29,13 @@ public class AppTest{
 		Thread.sleep(3000);
 		
 	}
+	
+	@Test
+	public void Test1() throws Exception{
+		System.out.println("Hello");
+	}
+	
+	
 	@After
 	public void TearDown(){
 		myD.close();
