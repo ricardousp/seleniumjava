@@ -18,7 +18,7 @@ public class AppTest{
 	@BeforeTest
 	public void SetUp(){
 		System.out.println("Before Test");
-		
+		System.out.println("Before Test");
 		myD.get("http://www.youtube.com");
 	}
 	@Test
