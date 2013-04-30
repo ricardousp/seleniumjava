@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation.AppTest" duration-ms="41565" started-at="2013-04-30T10:24:35Z" finished-at="2013-04-30T10:25:17Z">
+  <suite name="Automation.AppTest" duration-ms="16" started-at="2013-04-30T11:25:33Z" finished-at="2013-04-30T11:25:33Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="41565" started-at="2013-04-30T10:24:35Z" finished-at="2013-04-30T10:25:17Z">
-      <class name="Automation.AppTest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:Automation.AppTest@7321803a]" name="SetUp" is-config="true" duration-ms="25158" started-at="2013-04-30T03:24:35Z" finished-at="2013-04-30T03:25:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:Automation.AppTest@7321803a]" name="Test1" duration-ms="11157" started-at="2013-04-30T03:25:01Z" finished-at="2013-04-30T03:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Automation.AppTest@7321803a]" name="TearDown" is-config="true" duration-ms="5125" started-at="2013-04-30T03:25:12Z" finished-at="2013-04-30T03:25:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- Automation.AppTest -->
+    <test name="Command line test" duration-ms="16" started-at="2013-04-30T11:25:33Z" finished-at="2013-04-30T11:25:33Z">
     </test> <!-- Command line test -->
   </suite> <!-- Automation.AppTest -->
 </testng-results>
