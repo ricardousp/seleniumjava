@@ -2,11 +2,13 @@ package Automation;
 
 import com.thoughtworks.selenium.*;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.*;
-import static org.testng.Assert.*;
+
 import java.util.regex.Pattern;
 
 
@@ -14,7 +16,7 @@ public class App{
 	
 	WebDriver myD = new FirefoxDriver();;
 
-	@BeforeTest
+	@Before
 	public void SetUp(){
 		System.out.println("Before Test");
 	
@@ -28,7 +30,7 @@ public class App{
 		Thread.sleep(3000);
 		
 	}
-	@AfterTest
+	@After
 	public void TearDown(){
 		
 		System.out.println("AFter Test");
