@@ -32,7 +32,7 @@ public class SearchScenarioSteps {
 	@When("I am viewing HomePage")
 	public void viewHomePage() throws Exception{
 		driver.openURL("http://appliancesonline.com.au");
-		driver.maximise();
+	//	driver.maximise();
 	}
 	
 	@Then("I search for <product>")
