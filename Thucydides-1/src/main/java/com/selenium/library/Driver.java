@@ -103,15 +103,18 @@ public class Driver {
 			URL url = new URL(properties.getProperty("serverURL"));
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setJavascriptEnabled(true);
-			capabilities.setBrowserName("safari");
+			capabilities.setBrowserName(browser);
 			capabilities.setPlatform(Platform.ANY);
 			if(browser.equalsIgnoreCase("chrome")){
 				
 				//java -Dwebdriver.chrome.driver=/Applications/chromedriver -jar selenium-server-standalone-2.33.0.jar -port 1234
 				wd = new RemoteWebDriver(url,DesiredCapabilities.chrome());
-			}else{
+			}else if(browser.equalsIgnoreCase("safari")){
 			
-				wd = new RemoteWebDriver(url,capabilities);
+				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1234/wd/hub"),capabilities);
+			}else if(browser.equalsIgnoreCase("firefox")){
+			
+				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1235/wd/hub"),capabilities);
 			}
 			
 			
