@@ -108,7 +108,7 @@ public class Driver {
 			if(browser.equalsIgnoreCase("chrome")){
 				
 				//java -Dwebdriver.chrome.driver=/Applications/chromedriver -jar selenium-server-standalone-2.33.0.jar -port 1234
-				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1236/wd/hub"),DesiredCapabilities.chrome());
+				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1237/wd/hub"),DesiredCapabilities.chrome());
 				
 			}else if(browser.equalsIgnoreCase("safari")){
 			
