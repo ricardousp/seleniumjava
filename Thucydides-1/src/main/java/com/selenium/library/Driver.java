@@ -100,7 +100,7 @@ public class Driver {
 				wd.quit();
 			 	}catch(Exception err){
 			 }
-			URL url = new URL(properties.getProperty("serverURL"));
+	//		URL url = new URL(properties.getProperty("serverURL"));
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setJavascriptEnabled(true);
 			capabilities.setBrowserName(browser);
