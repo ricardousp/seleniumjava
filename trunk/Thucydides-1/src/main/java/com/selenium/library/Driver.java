@@ -93,7 +93,7 @@ public class Driver {
 		}
 	}
 	
-	public void openURL(String URL) throws Exception{
+	public void openURL(String appURL) throws Exception{
  
 		try{
 			try{
@@ -109,6 +109,7 @@ public class Driver {
 				
 				//java -Dwebdriver.chrome.driver=/Applications/chromedriver -jar selenium-server-standalone-2.33.0.jar -port 1234
 				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1236/wd/hub"),DesiredCapabilities.chrome());
+				
 			}else if(browser.equalsIgnoreCase("safari")){
 			
 				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1234/wd/hub"),capabilities);
@@ -118,7 +119,7 @@ public class Driver {
 			}
 			
 			
-			wd.get(URL);
+			wd.get(appURL);
 			sync();
  
 		}catch(Exception err){
