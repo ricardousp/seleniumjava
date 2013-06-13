@@ -34,7 +34,7 @@ public class Driver {
 
 	public Driver() throws Exception{
 		
-		properties.load(Driver.class.getClassLoader().getResourceAsStream("resources/config.properties"));		
+	//	properties.load(Driver.class.getClassLoader().getResourceAsStream("resources/config.properties"));		
 		browser = System.getProperty("Browser");
 		//browser = "chrome";
 		int browe = 0;
@@ -119,7 +119,7 @@ public class Driver {
 			}
 			
 			
-			wd.get(appURL);
+			wd.navigate().to(appURL);
 			sync();
  
 		}catch(Exception err){
@@ -134,11 +134,11 @@ public class Driver {
 	public void sync() throws Exception{
 
 		 try{
-			List<WebElement> myDynamicElement = (new WebDriverWait(wd,30)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("a")));
+			List<WebElement> myDynamicElement = (new WebDriverWait(wd,300)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("a")));
 			if(myDynamicElement != null){
-				wait(2000);
+				Thread.sleep(2000);
 			}else{
-				wait(7000);
+				Thread.sleep(7000);
 			}
 		}catch(NoSuchElementException err){
 			err.printStackTrace();
