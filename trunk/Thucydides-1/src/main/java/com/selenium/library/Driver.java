@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Properties;
 import static junit.framework.Assert.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Platform;
@@ -131,6 +132,12 @@ public class Driver {
  
 	}
 
+	
+	public void resize(){
+		wd.manage().window().setSize(new Dimension(920,300));
+	}
+	
+	
 	public void sync() throws Exception{
 
 		 try{
