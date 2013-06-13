@@ -134,7 +134,7 @@ public class Driver {
 
 	
 	public void resize(){
-		wd.manage().window().setSize(new Dimension(650,750));
+		wd.manage().window().setSize(new Dimension(450,750));
 	}
 	
 	
