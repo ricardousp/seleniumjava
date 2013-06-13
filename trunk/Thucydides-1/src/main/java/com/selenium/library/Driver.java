@@ -135,8 +135,10 @@ public class Driver {
 
 		 try{
 			List<WebElement> myDynamicElement = (new WebDriverWait(wd,30)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("a")));
-			if(myDynamicElement == null){
-				wait(5000);
+			if(myDynamicElement != null){
+				wait(2000);
+			}else{
+				wait(7000);
 			}
 		}catch(NoSuchElementException err){
 			err.printStackTrace();
