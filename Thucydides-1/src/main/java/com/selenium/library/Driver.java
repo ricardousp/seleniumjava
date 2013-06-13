@@ -136,7 +136,7 @@ public class Driver {
 		 try{
 			List<WebElement> myDynamicElement = (new WebDriverWait(wd,300)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("a")));
 			if(myDynamicElement != null){
-				Thread.sleep(2000);
+				Thread.sleep(5000);
 			}else{
 				Thread.sleep(7000);
 			}
