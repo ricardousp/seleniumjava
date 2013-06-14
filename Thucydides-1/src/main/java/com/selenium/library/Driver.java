@@ -113,7 +113,7 @@ public class Driver {
 				
 			}else if(browser.equalsIgnoreCase("safari")){
 			
-				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1234/wd/hub"),capabilities);
+				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1238/wd/hub"),capabilities);
 			}else if(browser.equalsIgnoreCase("firefox")){
 			
 				wd = new RemoteWebDriver(new URL("http://127.0.0.1:1235/wd/hub"),capabilities);
